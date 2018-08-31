@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3499476702E1A05A6A19AD15129A9F1C /* ionicons-lib.h in Headers */ = {isa = PBXBuildFile; fileRef = BE16D595A930C8757592CF83D984E541 /* ionicons-lib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D73B7095AE8B475978D03A67073CA7E /* ionicons-codes.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A12A107A2E50137B2AC98E4B4B2FE7 /* ionicons-codes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FE883DA8EDFC1627F96D8E720ABE5AB /* ionicons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8CC485132D629825761529F4DA636B /* ionicons-dummy.m */; };
+		5691E2C68EBCCE6D43D4A7B93F0A7CD9 /* ionicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 349FF4BA043565E1FF7F94CF089A0737 /* ionicons.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79D920BF04AE1864E80CEF7268B6D3E5 /* FontInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA6551021C384BD1672BAC3C9482EC /* FontInspector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9595F5257E4ADA61C76C2783771BE61E /* Pods-CustomAlertViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B1524275F511192B1CBF7ED4BEC00 /* Pods-CustomAlertViewDemo-dummy.m */; };
+		B731B9FCFDCD7CF28CA1F44BB2445E61 /* FontInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D1519F75C74121FE929742FD27B3C68A /* FontInspector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F18E31C51C2CAE8D603423F14C4523B1 /* IonIcons-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CE53791BBF679179A01FA64991AE5 /* IonIcons-iOS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F2FD286BF7FC1B7D05171E46C702D850 /* IonIcons-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DB273E44667796C968F0EFC8B6FAD45F /* IonIcons-iOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3169FF5905A28224F167F9FD7BC89F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F31DF8E7972D2BBF533926C7DDEF513;
+			remoteInfo = ionicons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E7AC7F4047E46CE721F958010AD83B /* ionicons.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ionicons.bundle; path = ionicons/ionicons.bundle; sourceTree = "<group>"; };
+		30BDB3D4AFED88E29E0199221A6BB67C /* Pods-CustomAlertViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomAlertViewDemo-resources.sh"; sourceTree = "<group>"; };
+		349FF4BA043565E1FF7F94CF089A0737 /* ionicons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ionicons.h; path = ionicons/ionicons.h; sourceTree = "<group>"; };
+		455C833599E8BE03CF1E22B3DABB3B18 /* Pods-CustomAlertViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomAlertViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		50FEF56ED2B3C4587F7168E1748C32B9 /* libionicons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libionicons.a; path = libionicons.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8CC485132D629825761529F4DA636B /* ionicons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ionicons-dummy.m"; sourceTree = "<group>"; };
+		5BBA6551021C384BD1672BAC3C9482EC /* FontInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FontInspector.m; path = ionicons/FontInspector.m; sourceTree = "<group>"; };
+		80A12A107A2E50137B2AC98E4B4B2FE7 /* ionicons-codes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ionicons-codes.h"; path = "ionicons/ionicons-codes.h"; sourceTree = "<group>"; };
+		8D611491950DD74B430ACB1EEAC7CFB8 /* Pods-CustomAlertViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomAlertViewDemo-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9728358A07AF2B9F12AC77B88E557B8B /* libPods-CustomAlertViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CustomAlertViewDemo.a"; path = "libPods-CustomAlertViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4416FE38CBFA1A6F2FB0337326A903C /* Pods-CustomAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9D9B5C5344761AE047EA2D6EDA6762 /* Pods-CustomAlertViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomAlertViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE16D595A930C8757592CF83D984E541 /* ionicons-lib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ionicons-lib.h"; path = "ionicons/ionicons.bundle/ionicons-lib.h"; sourceTree = "<group>"; };
+		D1519F75C74121FE929742FD27B3C68A /* FontInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontInspector.h; path = ionicons/FontInspector.h; sourceTree = "<group>"; };
+		D85CE53791BBF679179A01FA64991AE5 /* IonIcons-iOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IonIcons-iOS.m"; path = "ionicons/IonIcons-iOS.m"; sourceTree = "<group>"; };
+		DB273E44667796C968F0EFC8B6FAD45F /* IonIcons-iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IonIcons-iOS.h"; path = "ionicons/IonIcons-iOS.h"; sourceTree = "<group>"; };
+		DEDD8D44EC548039879E9CCFA78B2D1E /* ionicons.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ionicons.xcconfig; sourceTree = "<group>"; };
+		E1EE92CD8FDE25E5ED9293FC5DF2A8B6 /* Pods-CustomAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FA8B1524275F511192B1CBF7ED4BEC00 /* Pods-CustomAlertViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomAlertViewDemo-dummy.m"; sourceTree = "<group>"; };
+		FEA7DCFCD827BAFBEFD721F6196442AA /* ionicons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ionicons-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3333C787CC8BBE2EBA1D697E1C6FF94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA2509D5B9FBD8B85013B096FEF35B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056FAB815E4A58792E47E44BE1C88D97 /* ionicons */ = {
+			isa = PBXGroup;
+			children = (
+				D1519F75C74121FE929742FD27B3C68A /* FontInspector.h */,
+				5BBA6551021C384BD1672BAC3C9482EC /* FontInspector.m */,
+				349FF4BA043565E1FF7F94CF089A0737 /* ionicons.h */,
+				80A12A107A2E50137B2AC98E4B4B2FE7 /* ionicons-codes.h */,
+				DB273E44667796C968F0EFC8B6FAD45F /* IonIcons-iOS.h */,
+				D85CE53791BBF679179A01FA64991AE5 /* IonIcons-iOS.m */,
+				BE16D595A930C8757592CF83D984E541 /* ionicons-lib.h */,
+				B61833AA0C8A1F7C3DBCEC55D13952DD /* Resources */,
+				2A154CCB4887DFBB0C2A49F5B8B33A67 /* Support Files */,
+			);
+			name = ionicons;
+			path = ionicons;
+			sourceTree = "<group>";
+		};
+		0C9ECF19A9516B4D4BA8BA6DFA65A1E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FEF56ED2B3C4587F7168E1748C32B9 /* libionicons.a */,
+				9728358A07AF2B9F12AC77B88E557B8B /* libPods-CustomAlertViewDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A154CCB4887DFBB0C2A49F5B8B33A67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD8D44EC548039879E9CCFA78B2D1E /* ionicons.xcconfig */,
+				5B8CC485132D629825761529F4DA636B /* ionicons-dummy.m */,
+				FEA7DCFCD827BAFBEFD721F6196442AA /* ionicons-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ionicons";
+			sourceTree = "<group>";
+		};
+		673EF3A364A7E2FA8BA363E5E367D361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056FAB815E4A58792E47E44BE1C88D97 /* ionicons */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				673EF3A364A7E2FA8BA363E5E367D361 /* Pods */,
+				0C9ECF19A9516B4D4BA8BA6DFA65A1E9 /* Products */,
+				E6AE5A6E76E88FCABD2491AF9C6C70A1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8216CE39797585E71291DAA365330CFA /* Pods-CustomAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BD9D9B5C5344761AE047EA2D6EDA6762 /* Pods-CustomAlertViewDemo-acknowledgements.markdown */,
+				455C833599E8BE03CF1E22B3DABB3B18 /* Pods-CustomAlertViewDemo-acknowledgements.plist */,
+				FA8B1524275F511192B1CBF7ED4BEC00 /* Pods-CustomAlertViewDemo-dummy.m */,
+				8D611491950DD74B430ACB1EEAC7CFB8 /* Pods-CustomAlertViewDemo-frameworks.sh */,
+				30BDB3D4AFED88E29E0199221A6BB67C /* Pods-CustomAlertViewDemo-resources.sh */,
+				A4416FE38CBFA1A6F2FB0337326A903C /* Pods-CustomAlertViewDemo.debug.xcconfig */,
+				E1EE92CD8FDE25E5ED9293FC5DF2A8B6 /* Pods-CustomAlertViewDemo.release.xcconfig */,
+			);
+			name = "Pods-CustomAlertViewDemo";
+			path = "Target Support Files/Pods-CustomAlertViewDemo";
+			sourceTree = "<group>";
+		};
+		B61833AA0C8A1F7C3DBCEC55D13952DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05E7AC7F4047E46CE721F958010AD83B /* ionicons.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E6AE5A6E76E88FCABD2491AF9C6C70A1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8216CE39797585E71291DAA365330CFA /* Pods-CustomAlertViewDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		108DA3CBDBEF12A26BC0FE7E57DB117D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B731B9FCFDCD7CF28CA1F44BB2445E61 /* FontInspector.h in Headers */,
+				3D73B7095AE8B475978D03A67073CA7E /* ionicons-codes.h in Headers */,
+				F2FD286BF7FC1B7D05171E46C702D850 /* IonIcons-iOS.h in Headers */,
+				3499476702E1A05A6A19AD15129A9F1C /* ionicons-lib.h in Headers */,
+				5691E2C68EBCCE6D43D4A7B93F0A7CD9 /* ionicons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5F31DF8E7972D2BBF533926C7DDEF513 /* ionicons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8597FE12A02EB5AB94F9893C6C0118 /* Build configuration list for PBXNativeTarget "ionicons" */;
+			buildPhases = (
+				1B221BEE4AF92CCA671C1F27A2D703B6 /* Sources */,
+				3333C787CC8BBE2EBA1D697E1C6FF94F /* Frameworks */,
+				108DA3CBDBEF12A26BC0FE7E57DB117D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ionicons;
+			productName = ionicons;
+			productReference = 50FEF56ED2B3C4587F7168E1748C32B9 /* libionicons.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		68CA881AEB217AE9F2048EFDAF869FF0 /* Pods-CustomAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17B81C20C65EBC19988038CDA2E4951 /* Build configuration list for PBXNativeTarget "Pods-CustomAlertViewDemo" */;
+			buildPhases = (
+				27E206699E4AFCAE66D1F3618E9EC9C4 /* Sources */,
+				6EA2509D5B9FBD8B85013B096FEF35B1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3573DF7572B88A23385EE1DA18C63790 /* PBXTargetDependency */,
+			);
+			name = "Pods-CustomAlertViewDemo";
+			productName = "Pods-CustomAlertViewDemo";
+			productReference = 9728358A07AF2B9F12AC77B88E557B8B /* libPods-CustomAlertViewDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0C9ECF19A9516B4D4BA8BA6DFA65A1E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F31DF8E7972D2BBF533926C7DDEF513 /* ionicons */,
+				68CA881AEB217AE9F2048EFDAF869FF0 /* Pods-CustomAlertViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B221BEE4AF92CCA671C1F27A2D703B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D920BF04AE1864E80CEF7268B6D3E5 /* FontInspector.m in Sources */,
+				4FE883DA8EDFC1627F96D8E720ABE5AB /* ionicons-dummy.m in Sources */,
+				F18E31C51C2CAE8D603423F14C4523B1 /* IonIcons-iOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E206699E4AFCAE66D1F3618E9EC9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9595F5257E4ADA61C76C2783771BE61E /* Pods-CustomAlertViewDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3573DF7572B88A23385EE1DA18C63790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ionicons;
+			target = 5F31DF8E7972D2BBF533926C7DDEF513 /* ionicons */;
+			targetProxy = E3169FF5905A28224F167F9FD7BC89F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4376E1B5BBBEB0FD3DDB83F87FEE8D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EE92CD8FDE25E5ED9293FC5DF2A8B6 /* Pods-CustomAlertViewDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98C34DB3804EE93B746A931BCECEA710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDD8D44EC548039879E9CCFA78B2D1E /* ionicons.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ionicons/ionicons-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ionicons;
+				PRODUCT_NAME = ionicons;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A194B3F0585F4742C536F23910C87D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4416FE38CBFA1A6F2FB0337326A903C /* Pods-CustomAlertViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEF53664490B0203FD0E613C8D7FC1F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDD8D44EC548039879E9CCFA78B2D1E /* ionicons.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ionicons/ionicons-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ionicons;
+				PRODUCT_NAME = ionicons;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8597FE12A02EB5AB94F9893C6C0118 /* Build configuration list for PBXNativeTarget "ionicons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C34DB3804EE93B746A931BCECEA710 /* Debug */,
+				AEF53664490B0203FD0E613C8D7FC1F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17B81C20C65EBC19988038CDA2E4951 /* Build configuration list for PBXNativeTarget "Pods-CustomAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A194B3F0585F4742C536F23910C87D59 /* Debug */,
+				4376E1B5BBBEB0FD3DDB83F87FEE8D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

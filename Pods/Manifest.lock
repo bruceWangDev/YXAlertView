@@ -1,0 +1,16 @@
+PODS:
+  - ionicons (2.1.1)
+
+DEPENDENCIES:
+  - ionicons
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ionicons
+
+SPEC CHECKSUMS:
+  ionicons: 630bcd2c2970741c3359e3a35ad544e71d3c086b
+
+PODFILE CHECKSUM: f45bebc6c9e9e66499a417992decb7392cf862ad
+
+COCOAPODS: 1.5.3
