@@ -129,6 +129,9 @@
         [button setImage:[IonIcons imageWithIcon:ion_ios_checkmark_outline
                                             size:20
                                            color:[UIColor blackColor]] forState:UIControlStateNormal];
+        [button setImage:[IonIcons imageWithIcon:ion_ios_checkmark_outline
+                                            size:20
+                                           color:ColorRGBA(61, 160, 246, 1)] forState:UIControlStateHighlighted];
         [button setImage:[IonIcons imageWithIcon:ion_ios_checkmark
                                             size:20
                                            color:ColorRGBA(61, 160, 246, 1)] forState:UIControlStateSelected];
@@ -405,47 +408,55 @@
 
     // 动画效果
     CGFloat alertY = self.frame.origin.y;
-//    NSLog(@"self.frame.origin.y - %f",self.frame.origin.y);
 
-    alertY -= SCREENH_HEIGHT / 4 * 3;
+    alertY = SCREENH_HEIGHT / 4;
     
-    __weak YXAlertView * weakSelf = self; // one
-    [UIView animateWithDuration:0.6 delay:0.1 usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveLinear animations:^{
+    __weak __typeof(self)weakSelf = self; // alone
+    [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:1 initialSpringVelocity:6 options:UIViewAnimationOptionCurveLinear animations:^{
         
-        YXAlertView * strongSelf = weakSelf;
-        CGRect tempRect = strongSelf.frame;
+        CGRect tempRect = weakSelf.frame;
         tempRect.origin.y = alertY;
-        strongSelf.frame = tempRect;
-//        NSLog(@"222 self.frame.origin.y - %f",self.frame.origin.y);
+        weakSelf.frame = tempRect;
 
     } completion:^(BOOL finished) {
 
         NSLog(@"finish");
+        
     }];
 }
 
-- (void)dismissAlertView {
+- (void)dismiss {
     
-    __weak __typeof(self)weakSelf = self; // two
+    __weak __typeof(self)weakSelf = self; // alone
     [UIView animateWithDuration:0.3 animations:^{
+        
         CGRect tempRect = weakSelf.frame;
         tempRect.origin.y = SCREENH_HEIGHT;
         weakSelf.frame = tempRect;
+        
     } completion:^(BOOL finished) {
-        // 没起作用
+
         [weakSelf removeFromSuperview];
+        
     }];
-    
-//    NSLog(@"333 self.frame.origin.y - %f",self.frame.origin.y);
 }
 
 #pragma mark - delegate
 - (void)btnClick:(UIButton *)btn {
     
-    if ([self.delegate respondsToSelector:@selector(yxAlertView:clickedButtonAtIndex:)]) {
-        [self.delegate yxAlertView:self clickedButtonAtIndex:btn.tag];
+    if ([self.delegate respondsToSelector:@selector(yxAlertView:
+                                                    clickedButtonAtTag:
+                                                    travelNumberStr:
+                                                    referencesManStr:)]) {
+        
+        [self.delegate yxAlertView:self clickedButtonAtTag:btn.tag
+                                           travelNumberStr:_travelNumberTF.text
+                                          referencesManStr:_referencesManTF.text];
+        
     }
-    [self dismissAlertView];
+    
+    self.callBlock(btn.tag, _travelNumberTF.text, _referencesManTF.text);
+    
 }
 
 #pragma mark - textFiled delegate
@@ -453,12 +464,6 @@
     
     [_travelNumberTF resignFirstResponder];
     [_referencesManTF resignFirstResponder];
-    
-    // 点击return 也调用 ...
-    if ([self.delegate respondsToSelector:@selector(yxAlertView:clickedButtonAtIndex:)]) {
-        [self.delegate yxAlertView:self clickedButtonAtIndex:9999];
-    }
-    [self dismissAlertView];
     
     return YES;
 }
