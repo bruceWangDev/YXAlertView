@@ -30,7 +30,7 @@
     
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor orangeColor];
     
     [self show];
 }
@@ -45,8 +45,16 @@
 - (void)dismiss {
     
     [_alertView dismiss];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+    __weak typeof(self) weakSelf = self;
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+        [weakSelf.alertView removeFromSuperview];
+
+        [self dismissViewControllerAnimated:YES completion:nil];
+
+    });
 }
 
 - (void)creatUI {
@@ -360,26 +368,14 @@
      
      I didn't think of a solution ..
      */
-    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
-        
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            
-            [self presentViewController:imagePickerVC animated:YES completion:nil];
-        
-        }];
-         
-    } else {
-        
-        [self presentViewController:imagePickerVC animated:NO completion:nil];
-        
-    }
+    [self presentViewController:imagePickerVC animated:NO completion:nil];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
     NSLog(@"相机取消了");
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self hide];
 
 }
 
@@ -387,7 +383,13 @@
     
     _photoData = info;
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self hide];
+    
+}
+
+- (void)hide {
+    
+    [self dismissViewControllerAnimated:NO completion:nil];
     
 }
 

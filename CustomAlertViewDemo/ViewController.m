@@ -29,7 +29,7 @@
     YXAlertVC * yxVC = [[YXAlertVC alloc] init];
 
 #pragma mark - method two
-//    yxVC.delegate = self;
+    yxVC.delegate = self;
     
     // 设置界面跳转的时候上一层页面不释放 ..
     yxVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
@@ -37,22 +37,22 @@
     [self presentViewController:yxVC animated:YES completion:nil];
     
 #pragma mark - method one
-    yxVC.caseOneBlock = ^(NSDictionary *photoDic) {
-
-        NSLog(@"block photo info is %@",photoDic);
-
-    };
-
-    /*
-     if we're in the real pre-commit handler we can't actually add any new fences due to CA restriction
-     
-     ... 
-     */
-    yxVC.caseTwoBlock = ^(NSString *travelNumberStr, NSString *referencesManStr) {
-
-        NSLog(@"block input msg is %@ || %@",travelNumberStr,referencesManStr);
-
-    };
+//    yxVC.caseOneBlock = ^(NSDictionary *photoDic) {
+//
+//        NSLog(@"block photo info is %@",photoDic);
+//
+//    };
+//
+//    /*
+//     if we're in the real pre-commit handler we can't actually add any new fences due to CA restriction
+//     
+//     ... 
+//     */
+//    yxVC.caseTwoBlock = ^(NSString *travelNumberStr, NSString *referencesManStr) {
+//
+//        NSLog(@"block input msg is %@ || %@",travelNumberStr,referencesManStr);
+//
+//    };
 }
 
 #pragma mark - yxAlertVC delegate

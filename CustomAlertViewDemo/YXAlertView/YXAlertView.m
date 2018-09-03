@@ -435,7 +435,7 @@
 - (void)dismiss {
     
     __weak __typeof(self)weakSelf = self; // alone
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         
         CGRect tempRect = weakSelf.frame;
         tempRect.origin.y = SCREENH_HEIGHT;
@@ -443,12 +443,10 @@
         
     } completion:^(BOOL finished) {
 
-        [weakSelf removeFromSuperview];
+//        [weakSelf removeFromSuperview];
         
     }];
 }
-
-
 
 #pragma mark - delegate
 - (void)caseOneClick:(UIButton *)btn {
