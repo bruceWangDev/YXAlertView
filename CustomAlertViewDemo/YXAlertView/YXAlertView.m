@@ -194,7 +194,7 @@
         button.backgroundColor = [UIColor whiteColor];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
-        [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self action:@selector(caseOneClick:) forControlEvents:UIControlEventTouchUpInside];
 
         if (i == 0) {
             button.tag = 3333;
@@ -295,8 +295,6 @@
         button.layer.cornerRadius = 3.0f;
         button.layer.borderWidth = 0.5f;
         
-        [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        
         if (i == 0) {
             
             button.tag = 5555;
@@ -318,13 +316,21 @@
         }
         
         if (index == 1) {
+            
+            [button addTarget:self action:@selector(caseOneClick:) forControlEvents:UIControlEventTouchUpInside];
+            
             [_bgView1 addSubview:button];
+            
         } else {
+            
+            [button addTarget:self action:@selector(caseTwoClick:) forControlEvents:UIControlEventTouchUpInside];
+
             [_bgView2 addSubview:button];
         }
     }
     
     if (index == 1) {
+        
         [self addSubview:_bgView1];
         self.frame = CGRectMake(10,
                                 SCREENH_HEIGHT,
@@ -332,6 +338,7 @@
                                 _bgView1.frame.origin.y + _bgView1.frame.size.height + 20);
 
     } else {
+        
         [self addSubview:_bgView2];
         self.frame = CGRectMake(10,
                                 SCREENH_HEIGHT,
@@ -441,21 +448,37 @@
     }];
 }
 
+
+
 #pragma mark - delegate
-- (void)btnClick:(UIButton *)btn {
+- (void)caseOneClick:(UIButton *)btn {
     
     if ([self.delegate respondsToSelector:@selector(yxAlertView:
-                                                    clickedButtonAtTag:
-                                                    travelNumberStr:
-                                                    referencesManStr:)]) {
+                                                    clickButtonAtTag:)]) {
         
-        [self.delegate yxAlertView:self clickedButtonAtTag:btn.tag
-                                           travelNumberStr:_travelNumberTF.text
-                                          referencesManStr:_referencesManTF.text];
+        [self.delegate yxAlertView:self
+                  clickButtonAtTag:btn.tag];
         
     }
     
-    self.callBlock(btn.tag, _travelNumberTF.text, _referencesManTF.text);
+    self.caseFirBlock(btn.tag);
+        
+}
+
+- (void)caseTwoClick:(UIButton *)btn {
+    
+    if ([self.delegate respondsToSelector:@selector(yxAlertView:
+                                                    clickButtonAtTag:
+                                                    travelNumberStr:
+                                                    referencesManStr:)]) {
+        
+        [self.delegate yxAlertView:self
+                  clickButtonAtTag:btn.tag
+                   travelNumberStr:_travelNumberTF.text
+                  referencesManStr:_referencesManTF.text];
+    }
+    
+    self.caseSedBlock(btn.tag, _travelNumberTF.text, _referencesManTF.text);
     
 }
 

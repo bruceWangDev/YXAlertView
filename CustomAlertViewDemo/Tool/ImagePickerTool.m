@@ -9,6 +9,7 @@
 #import "ImagePickerTool.h"
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <Photos/PHPhotoLibrary.h>
 
 @implementation ImagePickerTool
 
@@ -46,6 +47,16 @@
     
     return [UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear];
     
+}
+
++ (BOOL)isHavePhotoPermission {
+    
+    PHAuthorizationStatus photoStatus = [PHPhotoLibrary authorizationStatus];
+    
+    if (photoStatus == PHAuthorizationStatusRestricted || photoStatus ==  PHAuthorizationStatusDenied) {
+        return NO;
+    }
+    return YES;
 }
 
 @end

@@ -18,4 +18,6 @@
 
 + (BOOL)isHaveBehindCamera;
 
++ (BOOL)isHavePhotoPermission;
+
 @end

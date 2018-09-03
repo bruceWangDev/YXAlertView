@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- Two textFiled text for callback of the second case
- */
-typedef void(^CallBlock) (NSInteger buttonTag, NSString * travelNumberStr, NSString * referencesManStr);
+// first  case block
+typedef void(^CaseFirBlock)(NSInteger buttonTag);
+
+// second case block
+typedef void(^CaseSedBlock)(NSInteger buttonTag, NSString * travelNumberStr, NSString * referencesManStr);
 
 @class YXAlertView;
 
@@ -19,16 +20,22 @@ typedef void(^CallBlock) (NSInteger buttonTag, NSString * travelNumberStr, NSStr
 
 @optional
 
-- (void)yxAlertView:(YXAlertView *)alertView clickedButtonAtTag:(NSInteger)buttonTag
-                                                travelNumberStr:(NSString *)travelNumberStr
-                                               referencesManStr:(NSString *)referencesManStr;
+// first  case delagate
+- (void)yxAlertView:(YXAlertView *)alertView clickButtonAtTag:(NSInteger)buttonTag;
+
+// second case delagate 
+- (void)yxAlertView:(YXAlertView *)alertView clickButtonAtTag:(NSInteger)buttonTag
+                                              travelNumberStr:(NSString *)travelNumberStr
+                                             referencesManStr:(NSString *)referencesManStr;
 
 @end
 
 @interface YXAlertView : UIView
 
 // by block
-@property (nonatomic, strong) CallBlock callBlock;
+@property (nonatomic, copy) CaseFirBlock caseFirBlock;
+
+@property (nonatomic, copy) CaseSedBlock caseSedBlock;
 
 // by delegate
 @property (nonatomic, weak) id <YXAlertViewDeleagte> delegate;
